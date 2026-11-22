@@ -2,3 +2,4 @@ File: .\export_final.zip
 Ảnh: 22 · đã có frame_meta: 22 · số đối tượng: child_seat=12, face=14, face13=6, hand=12, infant_seat=8, object=10, person=16, phone=1
   [WARN] D02.png: left_eye_outer nằm bên trái ảnh so với right_eye_outer: kiểm lại quy ước trái/phải theo người (đúng nếu mặt quay hẳn sang bên)
 Kết quả: 0 lỗi, 1 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+Giải thích WARN D02.png: Checker so trái/phải theo X, còn ảnh DMS xoay khoảng 90° (CHECKPOINTS.md, COMMON_ERRORS.md). Trong XML, left_eye_outer có Y=684.99 > right_eye_outer Y=539.89; cả 4 cặp điểm mắt đều có Y trái > Y phải, phù hợp quy ước theo người. Đây là đối chiếu tọa độ, chưa xác nhận vị trí điểm trên ảnh trong CVAT.

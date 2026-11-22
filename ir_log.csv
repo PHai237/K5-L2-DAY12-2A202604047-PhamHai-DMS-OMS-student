@@ -1,0 +1,6 @@
+﻿frame_id,source,phenomenon,affected_field,effect_on_label
+S01_ir,IR_sim,"Ảnh S01_rgb và S01_ir đều rõ: nhận diện được người, khuôn mặt, ghế em bé và hộp; không thấy đối tượng nào tối hoặc khó phân biệt hơn ở IR-sim.","person, face, infant_seat, object",Giữ đủ các nhãn quan sát được ở hai ảnh; không đổi thành unknown chỉ vì ảnh IR-sim.
+S05_ir,IR_sim,"Cả RGB và IR-sim đều không thấy mặt vì người phụ nữ quay hẳn đi; một bàn tay còn ra ngoài khung ảnh. Nguyên nhân là hướng nhìn và giới hạn khung hình, không phải IR làm mất chi tiết.",face,Giữ box person nhưng không vẽ face; OMS không gán hand. Không suy luận có mặt từ ảnh kia.
+D01,real_IR,"Góc nghiêng khiến mắt phải bị che hoàn toàn, chỉ thấy rõ mắt trái; không xác định đáng tin cậy vị trí 4 landmark mắt phải.","eye_right, face13.right_eye_*","eye_right=unknown; cả 4 điểm right_eye_* outside=1, không đặt điểm ước lượng tùy ý."
+D02,real_IR,Kính che phần mí trên mắt trái; vẫn nhìn được vùng mắt và dùng các điểm lân cận để xác định vị trí mí trên.,face13.left_eye_upper,"left_eye_upper: occluded=1, outside=0 vì điểm bị che nhưng xác định được vị trí."
+D05,real_IR,Động tác uống nước che khóe miệng phải; góc nghiêng che khóe trong mắt phải. Vẫn xác định được vị trí tương đối hai điểm.,"face13.mouth_right, face13.right_eye_inner","Hai điểm đặt occluded=1, outside=0; không đánh outside khi vẫn xác định được vị trí."
